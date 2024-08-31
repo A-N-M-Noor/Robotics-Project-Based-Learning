@@ -85,7 +85,7 @@ void loop() {
 }
 ```
 
-If you look carefully at the blinking pattern, you'll notice that the Arduino is doing the same thing again and again... A loop is happening, right? Can you break down the steps that are needed to make an LED blink like this?
+If you look carefully at the [blinking pattern](#Output), you'll notice that the Arduino is doing the same thing again and again... A loop is happening, right? Can you break down the steps that are needed to make an LED blink like this?
 1. Turn on the LED.
 2. Keep it on for a set amount of time.
 3. Turn off the LED.

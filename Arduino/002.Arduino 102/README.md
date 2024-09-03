@@ -1,0 +1,2 @@
+# Arduino 102 - Working with multiple LEDs
+In this tutorial, we will build upon our [previous project](../) and learn how to control four different LEDs using an Arduino! This project will give you a better understanding of how to control multiple outputs and write more complex code. If you've mastered blinking a single LED, this is a great next step!

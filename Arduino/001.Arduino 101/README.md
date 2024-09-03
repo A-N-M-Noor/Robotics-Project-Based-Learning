@@ -106,7 +106,7 @@ The function ` digitalWrite ` sends or does not send power to a certain pin. Her
 ```cpp
 delay(1000);
 ```
-The function ` delay ` has only one parameter. It is a time value and the unit is in milliseconds. So, `delay(1000)` means the Arduino will wait for 1000 milliseconds as in 1 second.
+The function ` delay ` has only one parameter. It is a time value and the unit is in milliseconds. So, `delay(1000)` means the Arduino will wait for 1000 milliseconds as in 1 second. You can out any number here.
 
 **Step 3:** We turn off the LED:
 ```cpp
@@ -127,3 +127,13 @@ delay(1000);
 * Do we have to give the pin a name? We named the pin 13 as "LED", right? Do we have to do that? Well, we could just use `13` everywhere, like ` pinMode(13, OUTPUT) ` and ` digitalWrite(13, HIGH) `.
 <br> But it's difficult to remember what pin we've used and what if we change the pin for some reason? Let's say we connect the LED to pin 12 instead. Then we would have to change all the `13` to `12`, right?
 <br> That's why it is a good practice to first give the pin a name, and then use that name in every functions where necessary. To Arduino, the name "LED" doesn't exist anyways. Wherever we use `LED`, Arduino just sees the number `13` 😛
+
+## Uploading the code
+The code is saved on your desktop/laptop. How do you send it to the Arduino? You can upload the code to your Arduino by connecting the Arduino to your PC using the cable.
+* **Step 1:** Open Arduino IDE and write the code there.
+* **Step 2:** Connect your Arduino board to your computer using a USB cable.
+* **Step 3:** From `Tools > Board` select Arduino Uno (Or whatever model you're using.
+* **Step 4:** From `Tools > Port` select the port your Arduino is connected. If you can't identify which port the Arduino is connected to, disconnect and connect the Arduino again. Notice which port disappears and re-appears when you do so and connect to that port.
+* **Step 5:** Hit ` Ctrl + U ` on your keyboard or click on the upload button on your Arduino IDE. Wait a few seconds and the code should upload to the Arduino board.
+
+That's it! The LED should start blinking! Now try changing the code yourself (i.e. Change the delays and add more complex blinking patterns).
